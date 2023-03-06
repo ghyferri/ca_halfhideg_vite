@@ -40,7 +40,8 @@ function loadMap() {
   })
     .setLngLat([`${lon}`, `${lat}`])
     .addTo(map)
-    .setPopup(popup);
+    .setPopup(popup);map.scrollZoom.disable();
+
 }
 
 export { getAddress, loadMap };
