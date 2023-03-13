@@ -33,14 +33,15 @@ function loadMap() {
   const popup = new mapboxgl.Popup({ offset: 25 }).setText(
     'APPELSCENE & POPUP',
   );
-  const marker = new mapboxgl.Marker({
+  new mapboxgl.Marker({
     color: 'red',
     scale: 1.5,
     draggable: false,
   })
     .setLngLat([`${lon}`, `${lat}`])
     .addTo(map)
-    .setPopup(popup);
+    .setPopup(popup)
+    .addTo(map);
   map.scrollZoom.disable();
 }
 
