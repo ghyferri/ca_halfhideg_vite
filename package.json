@@ -14,7 +14,9 @@
     "vite": "^4.1.0"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.14",
     "mapbox-gl": "^2.13.0",
+    "postcss-preset-env": "^8.0.1",
     "swiper": "^9.0.4"
   }
 }
